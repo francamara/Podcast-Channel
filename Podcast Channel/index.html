@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Acamica</title>
+    <link rel="stylesheet" href="style/css/main.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <a href="#inicio"><img src="img/logo.svg" alt="bd-logo"></a>
+        </div>
+        <input type="checkbox" id="navbar">
+        <label for="navbar">
+            <!-- HAMBURGER MENU SHAPE ☰ -->
+            <span class="burger-shape">
+                <span id="burger-top"></span>
+                <span id="burger-middle"></span>
+                <span id="burger-bottom"></span>
+            </span>
+        </label>
+        <nav >
+            <ul class="text-uppercase">
+                <li><a href="#episodios">Episodios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#entrevistas">Entrevistas</a></li>
+                <li><a href="#topicos">Topicos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+    <main>
+        <!-- INICIO -->
+        <div class="container" id="inicio">
+            <div class="title">
+                <h1><span class="display-inline">Hello&nbsp;<span class="line-through">world</span>&nbsp;</span></h1>
+                <h1><span>pale blue dot<span class="blue-dot">.</span></span></h1>
+            </div>
+            <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <button class="button-style" onclick="window.location.href='https://www.youtube.com/watch?v=DLzxrzFCyOs';">conoce mas</button>
+        </div>
+        <!-- EPISODIOS -->
+        <div class="container" id="episodios">
+                <h2 class="color-white">Episodios</h2>
+                <!-- TO CHANGE THE PODCAST CONTENT ONLY CHANGE THE CONTENT INSIDE OF THE DIV -->
+                <div class="episodes-grid center">
+                    <div class="embed">
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/0oYefaA2xTM9Ej7izpb7cz"></iframe>
+                    </div>
+                    <div class="embed">
+                        <iframe src="https://open.spotify.com/embed-podcast/show/2D3oxf1I4JpuWxgVoKlC0O" ></iframe>
+                    </div>
+                    <div class="embed">
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/6TtEAPf0zd5GRD9cG6oZPy" ></iframe>
+                    </div>
+                    <div class="embed">
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/0NExFNNay7OwqIDplWI1pk" ></iframe>
+                    </div>
+                </div>
+        </div>
+        <!-- NOSOTROS -->
+        <div class="container" id="nosotros">
+            <div class="phone-img">
+                <img src="img/phone.png" alt="phone-img">
+            </div>
+            <div class="text">
+                <h2>De dónde venimos</h2>
+                <p id="p-margin">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
+                <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+            </div>
+        </div>
+        <!-- ENTREVISTAS -->
+        <div class="container" id="entrevistas">
+            <h2>Invitadas/os estelares</h2>
+            <div class="grid">
+                <img src="img/invitados/1_grace-hopper.png" alt="Grace Hopper">
+                <img src="img/invitados/2_Katie-Bouman.png" alt="Katie Bouman">
+                <img src="img/invitados/3_Margaret_Hamilton.png" alt="Margaret Hamilton">
+                <img src="img/invitados/4_univac_computer.png" alt="Computer 1950">
+                <img src="img/invitados/5_computer_operators_kenia.png" alt="Computer Operators">
+                <img src="img/invitados/6_susan-kare.png" alt="Susan Kare">
+            </div>
+        </div>
+        <!-- TOPICOS -->
+        <div class="container" id="topicos">
+            <h2>Algunos de nuestros temas</h2>
+            <div class="icons">
+                <div class="icon">
+                    <img src="img/icons/1_trabajo.svg" alt="trabajo remoto">
+                    <p>Trabajo remoto</p>
+                </div>
+                <div class="icon">
+                    <img src="img/icons/2_repensando.svg" alt="repensando la programacion">
+                    <p>Repensando la programación</p>
+                </div>
+                <div class="icon">
+                    <img src="img/icons/3_bases.svg" alt="bases de codigo">
+                    <p>Bases del código</p>
+                </div>
+                <div class="icon">
+                    <img src="img/icons/4_seguridad.svg" alt="seguridad informatica">
+                    <p>Seguridad informática</p>
+                </div>
+            </div>
+        </div>
+        <!-- NOVEDADES -->
+        <div class="container" id="novedades">
+            <div class="novedades-content">
+                <h2 class="color-white">¿Querés las últimas novedades?</h2>
+                <button class="button-style" onclick="window.location.href='https://www.youtube.com/watch?v=lXxUPo9tRao';">escucha los episodios</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-text">
+            <p>© 2019— Hello blue pale dot </p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.spotify.com/nl/" target="blank"><i class="fab fa-spotify"></i></a>
+            <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://telegram.org/" target="blank"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/3ed41628f4.js" crossorigin="anonymous"></script>
+    <script>console.log("%cCoded by Francisco Camara 🤣🤣🤣😍😍😍✌✌✌", "color: #39ff14; font-family: Comic Sans MS; font-size: 40px; border: #04d9ff 2px solid ; background-color: #FFFF33");</script>
+</body>
+</html>

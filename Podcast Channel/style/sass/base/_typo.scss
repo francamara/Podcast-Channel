@@ -1,0 +1,92 @@
+// IBM PLEX MONO
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
+$font-ibm-plex: 'IBM Plex Mono';
+
+@mixin font-ibm-plex-mono-regular {
+    font-family: $font-ibm-plex;
+    font-weight: 400;
+}
+
+@mixin font-ibm-plex-mono-medium {
+    font-family: $font-ibm-plex;
+    font-weight: 500;
+}
+
+// IBM PLEX SANS
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
+$font-ibm-plex-sans: 'IBM Plex Sans';
+
+@mixin font-ibm-plex-sans {
+    font-family: $font-ibm-plex-sans;
+    font-weight: 400;
+}
+
+@mixin font-ibm-plex-sans-semi-bold {
+    font-family: $font-ibm-plex-sans;
+    font-weight: 600;
+}
+
+@mixin font-ibm-plex-sans-bold {
+    font-family: $font-ibm-plex-sans;
+    font-weight: 700;
+}
+
+// FONTS SET
+
+@mixin title ($font-size){
+    @include font-ibm-plex-sans();
+    font-size: $font-size;
+    color: $color-text-dark;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+h1{
+    @include title(36px);
+    @include media-desktop{
+        @include title(64px);
+    }
+    display: inline;
+}
+
+h2{
+    @include title(36px);
+    @include media-desktop{
+        @include title(48px);
+    }
+}
+
+@mixin text ($font-size){
+    @include font-ibm-plex-mono-regular();
+    font-size: $font-size;
+    color: $color-text-dark;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+p, li{
+    @include text(14px);
+    @include media-desktop{
+        @include text(16px)
+    }
+}
+
+@mixin topicos-font{
+    @include text(24px);
+    @include font-ibm-plex-sans-semi-bold();
+}
+
+@mixin footer-copyright{
+    @include text(16px);
+}
+
+.blue-dot{
+    @include font-ibm-plex-sans();
+    font-size: 36px;
+    line-height: 32px;
+    letter-spacing: 0;
+    @include media-desktop {
+        font-size: 64px;
+        color: #0000EC;
+    }
+}
